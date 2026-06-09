@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>ورقة وجد · توزيعات راقية لكل مناسبة</title>
+<meta name="description" content="ورقة وجد — توزيعات وتصاميم راقية لكل مناسبة. أعراس، تخرّج، مواليد وأعياد بلمسةٍ مميّزة. موثّقون في العمل الحر وشحن لجميع مناطق المملكة. اطلبي عبر واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5ede1; --bg2:#eee1cf; --paper:#fdfaf3;
+  --ink:#46383a; --ink2:#6f5d5b; --ink3:#9f8e88;
+  --rose:#c2867f; --rose-d:#a76660; --gold:#bb9a55; --gold-d:#9a7b3c;
+  --char:#3a2c2e; --char2:#473638;
+  --line:rgba(70,56,58,.14); --line2:rgba(70,56,58,.07);
+  --fa-d:'El Messiri',serif; --fa:'Tajawal',sans-serif;
+  --fd:'Cormorant Garamond',serif; --fu:'Jost',sans-serif;
+  --ease:cubic-bezier(.32,.72,0,1); --maxw:1240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fa);font-weight:300;line-height:1.85;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--rose);color:#fff}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--fa-d);font-weight:600;line-height:1.16;letter-spacing:-.01em}
+.lat{font-family:var(--fd)}
+.ui{font-family:var(--fu)}
+.spr{display:inline-block;color:var(--gold)}
+
+.grain{position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+#pre{position:fixed;inset:0;z-index:10000;background:var(--char);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .9s var(--ease),visibility .9s}
+#pre.done{opacity:0;visibility:hidden}
+#pre .spr{width:50px;height:50px;color:var(--gold);opacity:0;transform:translateY(10px);animation:plin 1s var(--ease) .1s forwards}
+#pre b{font-family:var(--fa-d);font-size:clamp(30px,7vw,48px);color:var(--bg);font-weight:600;opacity:0;animation:plin 1s var(--ease) .3s forwards}
+#pre .pls{font-family:var(--fu);font-size:10px;letter-spacing:.5em;color:var(--gold);text-transform:uppercase;opacity:0;animation:plin 1s var(--ease) .5s forwards}
+#pre .plb{width:120px;height:1px;background:rgba(255,255,255,.18);overflow:hidden}
+#pre .plb i{display:block;height:100%;width:40%;background:var(--gold);animation:plbar 1.3s var(--ease) infinite}
+@keyframes plin{to{opacity:1;transform:none}}
+@keyframes plbar{0%{transform:translateX(-120%)}100%{transform:translateX(360%)}}
+
+#prog{position:fixed;top:0;left:0;right:0;height:2px;z-index:8000}
+#prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--rose))}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:7000;display:flex;justify-content:center;padding:18px 16px;transition:padding .5s var(--ease)}
+.nav.shrink{padding:10px 16px}
+.nav-in{width:100%;max-width:var(--maxw);display:flex;align-items:center;justify-content:space-between;gap:18px;
+  background:rgba(253,250,243,.82);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);
+  border:1px solid var(--line);border-radius:100px;padding:9px 12px 9px 22px;box-shadow:0 18px 50px -30px rgba(70,56,58,.45)}
+.brand{display:flex;align-items:center;gap:11px}
+.brand .bk{width:42px;height:42px;border-radius:50%;background:var(--char);display:grid;place-items:center;flex:none}
+.brand .bk .spr{width:24px;height:24px;color:var(--gold)}
+.brand .bn b{font-family:var(--fa-d);font-weight:600;font-size:19px}
+.brand .bn small{display:block;font-family:var(--fu);font-size:8px;letter-spacing:.3em;color:var(--ink3);text-transform:uppercase;margin-top:-2px}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-size:14.5px;color:var(--ink2);padding:8px 14px;border-radius:100px;transition:.4s var(--ease)}
+.nav-links a:hover{color:var(--ink);background:rgba(70,56,58,.05)}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:#25d366;color:#0a3d1c!important;padding:10px 10px 10px 18px!important;border-radius:100px;font-size:14px;font-weight:500;transition:.45s var(--ease)}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 14px 30px -12px rgba(37,211,102,.5)}
+.nav-cta .ic{width:24px;height:24px;border-radius:50%;background:rgba(10,61,28,.18);display:grid;place-items:center}
+.nav-cta .ic svg{width:13px;height:13px;fill:#0a3d1c}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--paper);cursor:pointer;position:relative;flex:none}
+.burger span{position:absolute;left:13px;width:18px;height:1.6px;background:var(--ink);border-radius:2px;transition:.45s var(--ease)}
+.burger span:nth-child(1){top:18px}.burger span:nth-child(2){top:24px}
+.burger.x span:nth-child(1){top:21px;transform:rotate(45deg)}
+.burger.x span:nth-child(2){top:21px;transform:rotate(-45deg)}
+
+.mob{position:fixed;inset:0;z-index:6900;background:rgba(58,44,46,.97);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;opacity:0;visibility:hidden;transition:.6s var(--ease)}
+.mob.open{opacity:1;visibility:visible}
+.mob a{font-family:var(--fa-d);font-size:29px;color:var(--bg);padding:9px;opacity:0;transform:translateY(26px);transition:.7s var(--ease)}
+.mob.open a{opacity:1;transform:none}
+.mob.open a:nth-child(1){transition-delay:.08s}.mob.open a:nth-child(2){transition-delay:.14s}.mob.open a:nth-child(3){transition-delay:.2s}.mob.open a:nth-child(4){transition-delay:.26s}.mob.open a:nth-child(5){transition-delay:.32s}
+.mob .ml{font-family:var(--fu);font-size:11px;letter-spacing:.42em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+.mob .mcta{margin-top:14px;background:#25d366;color:#0a3d1c;font-family:var(--fa);font-weight:500;font-size:18px;padding:13px 34px;border-radius:100px}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section{position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--fu);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-d);font-weight:400}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--gold)}
+.eyebrow.c::after{content:"";width:24px;height:1px;background:var(--gold)}
+
+.rv{opacity:0;transform:translateY(44px);filter:blur(8px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
+.rv.in{opacity:1;transform:none;filter:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}.d5{transition-delay:.4s}.d6{transition-delay:.48s}
+
+/* HERO (design-forward, no photo) */
+.hero{min-height:100dvh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:120px 0 80px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0}
+.hero::before{width:440px;height:440px;background:radial-gradient(circle,rgba(194,134,127,.5),transparent 70%);top:-80px;right:-100px}
+.hero::after{width:420px;height:420px;background:radial-gradient(circle,rgba(187,154,85,.45),transparent 70%);bottom:-120px;left:-120px}
+.hero-in{position:relative;z-index:2;max-width:880px;padding:0 24px}
+.hero .spr-top{width:60px;height:60px;color:var(--gold);margin:0 auto 14px;display:block}
+.hero h1{font-size:clamp(48px,10vw,128px);font-weight:600;line-height:.98;letter-spacing:-.02em}
+.hero h1 em{font-family:var(--fd);font-style:italic;font-weight:400;color:var(--rose-d)}
+.hero-sub{font-family:var(--fd);font-size:clamp(20px,3.2vw,32px);font-style:italic;color:var(--gold-d);margin-top:6px}
+.hero-lead{max-width:540px;margin:24px auto 0;font-size:clamp(15px,2vw,18px);color:var(--ink2)}
+.hero-act{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:11px;border-radius:100px;font-size:15.5px;padding:14px 14px 14px 26px;transition:.5s var(--ease);font-family:var(--fa);cursor:pointer;border:none}
+.btn .ic{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:13px;transition:.5s var(--ease)}
+.btn .ic svg{width:15px;height:15px}
+.btn-w{background:#25d366;color:#0a3d1c;font-weight:500}.btn-w .ic{background:rgba(10,61,28,.18)}.btn-w .ic svg{fill:#0a3d1c}
+.btn-w:hover{transform:translateY(-2px);box-shadow:0 22px 44px -20px rgba(37,211,102,.55)}.btn-w:hover .ic{transform:translateX(-3px) translateY(-1px)}
+.btn-o{background:transparent;color:var(--char);border:1px solid var(--line)}.btn-o .ic{background:var(--bg2)}
+.btn-o:hover{border-color:var(--char);transform:translateY(-2px)}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:34px}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px;font-family:var(--fu);font-size:12px;letter-spacing:.04em;color:var(--ink2)}
+.hero-trust span .spr{width:15px;height:15px}
+
+.marq{background:var(--char);color:var(--bg);padding:15px 0;overflow:hidden}
+.marq-t{display:flex;gap:38px;white-space:nowrap;width:max-content;animation:marq 30s linear infinite}
+.marq-t span{font-family:var(--fa-d);font-size:18px;color:rgba(245,237,225,.62);display:inline-flex;align-items:center;gap:38px}
+.marq-t span .spr{width:13px;height:13px;color:var(--gold)}
+@keyframes marq{to{transform:translateX(50%)}}
+
+.about{padding:clamp(80px,12vw,140px) 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,90px);align-items:center}
+.about h2{font-size:clamp(28px,4.6vw,52px);margin:20px 0 0;line-height:1.2}
+.about h2 em{font-family:var(--fd);font-style:italic;font-weight:500;color:var(--rose-d)}
+.about p{color:var(--ink2);font-size:16.5px;margin-top:22px;max-width:46ch}
+.about-card{position:relative;background:var(--char);color:var(--bg);border-radius:28px;padding:46px 40px;overflow:hidden}
+.about-card::after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(187,154,85,.4),transparent 70%);bottom:-100px;left:-80px}
+.about-card .spr{width:44px;height:44px;color:var(--gold);position:relative;z-index:2}
+.about-card h3{position:relative;z-index:2;font-size:26px;color:#fff;margin:18px 0 10px;line-height:1.4}
+.about-card h3 em{font-family:var(--fd);font-style:italic;color:var(--gold)}
+.about-card p{position:relative;z-index:2;color:rgba(245,237,225,.78);font-size:15.5px;max-width:none}
+.about-stats{position:relative;z-index:2;display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.about-stats .st .n{font-family:var(--fd);font-weight:600;font-size:30px;color:var(--gold);direction:ltr;line-height:1}
+.about-stats .st small{font-family:var(--fu);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,237,225,.6);display:block;margin-top:4px}
+
+.shead{text-align:center;max-width:680px;margin:0 auto clamp(46px,7vw,72px)}
+.shead .spr{width:30px;height:30px;color:var(--gold);margin-bottom:8px}
+.shead h2{font-size:clamp(30px,5vw,56px);margin-top:8px;line-height:1.12}
+.shead h2 em{font-family:var(--fd);font-style:italic;font-weight:500;color:var(--rose-d)}
+.shead p{color:var(--ink2);margin-top:16px;font-size:16.5px}
+
+/* services */
+.services{padding:clamp(80px,12vw,140px) 0;background:var(--bg2);border-top:1px solid var(--line2)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:34px 30px;transition:.55s var(--ease);position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 40px 70px -46px rgba(70,56,58,.5)}
+.svc .ic{width:54px;height:54px;border-radius:15px;background:var(--bg);display:grid;place-items:center;margin-bottom:18px;color:var(--rose-d);transition:.5s var(--ease)}
+.svc:hover .ic{background:var(--char);color:var(--gold)}
+.svc .ic svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.5}
+.svc h3{font-size:21px;margin-bottom:9px}
+.svc p{color:var(--ink2);font-size:14.5px}
+
+/* why */
+.why{padding:clamp(80px,12vw,140px) 0}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.wc{text-align:center;padding:30px 22px;border-radius:18px;transition:.5s var(--ease)}
+.wc:hover{background:var(--paper);box-shadow:0 30px 60px -48px rgba(70,56,58,.5)}
+.wc .spr{width:38px;height:38px;color:var(--gold);margin-bottom:14px}
+.wc h3{font-size:18px;margin-bottom:8px}
+.wc p{color:var(--ink2);font-size:14px}
+
+/* work / tiktok */
+.work{padding:clamp(80px,12vw,140px) 0;background:var(--char);color:var(--bg)}
+.work .shead h2{color:var(--bg)}.work .shead p{color:rgba(245,237,225,.66)}
+.work .eyebrow{color:var(--gold)}.work .eyebrow::before,.work .eyebrow.c::after{background:var(--gold)}
+.tk-show{max-width:680px;margin:0 auto;background:var(--char2);border:1px solid rgba(255,255,255,.1);border-radius:28px;padding:clamp(34px,5vw,52px) clamp(26px,4vw,46px);text-align:center;position:relative;overflow:hidden}
+.tk-show::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(187,154,85,.25),transparent 70%);top:-120px;left:-90px}
+.tk-glyph{position:relative;z-index:2;width:74px;height:74px;border-radius:22px;background:#0e0e10;display:grid;place-items:center;margin:0 auto 20px;box-shadow:0 18px 40px -16px rgba(0,0,0,.6)}
+.tk-glyph svg{width:38px;height:38px;fill:#fff}
+.tk-show .han{position:relative;z-index:2;font-family:var(--fd);font-size:28px;font-weight:500;color:#fff;letter-spacing:.02em}
+.tk-show p{position:relative;z-index:2;color:rgba(245,237,225,.74);font-size:15.5px;margin:10px auto 0;max-width:38ch}
+.tk-stats{position:relative;z-index:2;display:flex;justify-content:center;gap:clamp(22px,5vw,48px);margin:26px 0 30px}
+.tk-stats .s b{font-family:var(--fd);font-weight:600;font-size:30px;color:var(--gold);direction:ltr;display:block;line-height:1}
+.tk-stats .s small{font-family:var(--fu);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,237,225,.6);margin-top:6px;display:block}
+.tk-cta{position:relative;z-index:2;display:inline-flex;align-items:center;gap:11px;background:#fff;color:#111;padding:14px 16px 14px 28px;border-radius:100px;font-family:var(--fa);font-weight:500;font-size:15.5px;transition:.45s var(--ease)}
+.tk-cta:hover{transform:translateY(-2px);box-shadow:0 22px 44px -20px rgba(0,0,0,.5)}
+.tk-cta .ic{width:28px;height:28px;border-radius:50%;background:#f0eee9;display:grid;place-items:center;font-size:13px;transition:.45s var(--ease)}
+.tk-cta:hover .ic{transform:translateX(-3px) translateY(-1px)}
+
+/* order */
+.order{padding:clamp(80px,12vw,140px) 0}
+.od-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(34px,5vw,60px);align-items:center}
+.order h2{font-size:clamp(30px,5vw,54px);line-height:1.14}
+.order h2 em{font-family:var(--fd);font-style:italic;font-weight:500;color:var(--rose-d)}
+.order .lead{color:var(--ink2);font-size:16.5px;margin:20px 0 26px;max-width:42ch}
+.od-info{display:flex;flex-direction:column;gap:13px}
+.odi{display:flex;align-items:center;gap:14px}
+.odi .ico{width:44px;height:44px;border-radius:12px;background:var(--bg2);display:grid;place-items:center;flex:none;color:var(--rose-d)}
+.odi .ico svg{width:18px;height:18px}
+.odi small{font-family:var(--fu);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);display:block}
+.odi b{font-weight:500;font-size:15.5px;color:var(--ink)}.odi .num{font-family:var(--fd);font-weight:600;font-size:17px;direction:ltr}
+.ocard{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:30px 28px;box-shadow:0 40px 80px -56px rgba(70,56,58,.5)}
+.ocard h3{font-size:22px;margin-bottom:5px}.ocard .osub{font-size:13.5px;color:var(--ink2);margin-bottom:20px}
+.fld{margin-bottom:15px}
+.fld label{display:block;font-family:var(--fu);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-bottom:7px}
+.fld input,.fld select,.fld textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--ink);font-family:var(--fa);font-size:15px;font-weight:300;transition:.4s var(--ease);outline:none}
+.fld input::placeholder,.fld textarea::placeholder{color:var(--ink3)}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--gold);background:var(--paper)}
+.fld select{cursor:pointer}
+.fld textarea{resize:vertical;min-height:70px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.obtn{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:11px;background:#25d366;color:#0a3d1c;border:none;border-radius:100px;padding:15px;font-family:var(--fa);font-size:16px;font-weight:500;cursor:pointer;transition:.45s var(--ease);margin-top:4px}
+.obtn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -16px rgba(37,211,102,.6)}
+.obtn svg{width:20px;height:20px;fill:#0a3d1c}
+
+.foot{background:var(--char);color:var(--bg);padding:60px 0 36px;border-top:1px solid rgba(255,255,255,.08);text-align:center}
+.foot .spr{width:40px;height:40px;color:var(--gold);margin-bottom:14px}
+.foot h3{font-size:26px;color:#fff;margin-bottom:8px}
+.foot h3 em{font-family:var(--fd);font-style:italic;color:var(--gold)}
+.foot p{color:rgba(245,237,225,.65);font-size:15px;max-width:40ch;margin:0 auto 22px}
+.foot-soc{display:flex;gap:12px;justify-content:center;margin-bottom:30px}
+.foot-soc a{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.16);display:grid;place-items:center;color:rgba(245,237,225,.82);transition:.4s var(--ease)}
+.foot-soc a:hover{transform:translateY(-3px);color:#fff;border-color:var(--gold)}
+.foot-soc a svg{width:19px;height:19px;fill:currentColor}
+.foot-bot{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.foot-bot small{font-family:var(--fu);font-size:12px;letter-spacing:.06em;color:rgba(245,237,225,.5)}
+
+.wa{position:fixed;bottom:22px;left:22px;z-index:6000;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 16px 40px -12px rgba(37,211,102,.6);transition:.45s var(--ease);animation:wap 3s ease-in-out infinite}
+.wa:hover{transform:scale(1.08)}.wa svg{width:30px;height:30px;fill:#fff}
+@keyframes wap{0%,100%{box-shadow:0 16px 40px -12px rgba(37,211,102,.6)}50%{box-shadow:0 16px 54px -8px rgba(37,211,102,.85)}}
+
+@media(max-width:920px){
+  .nav-links{display:none}.burger{display:block}
+  .about-grid{grid-template-columns:1fr;gap:46px}.about-card{order:-1}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .od-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .wrap{padding:0 18px}
+  .svc-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .frow{grid-template-columns:1fr}
+  .hero-act{flex-direction:column;align-items:stretch}.hero-act .btn{justify-content:space-between}
+  .foot-bot{justify-content:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+<svg width="0" height="0" style="position:absolute"><symbol id="sprig" viewBox="0 0 24 24">
+<g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+<path d="M12 22V5"/>
+<path d="M12 9c-2.4 0-4-1.6-4-4 2.4 0 4 1.6 4 4z" fill="currentColor" stroke="none"/>
+<path d="M12 9c2.4 0 4-1.6 4-4-2.4 0-4 1.6-4 4z" fill="currentColor" stroke="none"/>
+<path d="M12 14c-2 0-3.4-1.4-3.4-3.4 2 0 3.4 1.4 3.4 3.4z" fill="currentColor" stroke="none"/>
+<path d="M12 14c2 0 3.4-1.4 3.4-3.4-2 0-3.4 1.4-3.4 3.4z" fill="currentColor" stroke="none"/>
+<circle cx="12" cy="3.4" r="1.5" fill="currentColor" stroke="none"/>
+</g></symbol></svg>
+
+<div id="pre"><span class="spr"><svg width="50" height="50"><use href="#sprig"/></svg></span><b>ورقة وجد</b><div class="pls">Wajd Paper</div><div class="plb"><i></i></div></div>
+<div id="prog"><i></i></div>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand">
+      <span class="bk"><span class="spr"><svg width="24" height="24"><use href="#sprig"/></svg></span></span>
+      <span class="bn"><b>ورقة وجد</b><small>Wajd Paper</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#work">أعمالنا</a>
+      <a href="#order">اطلبي الآن</a>
+      <a href="https://wa.me/966551460339?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%85%D9%86%20%D9%88%D8%B1%D9%82%D8%A9%20%D9%88%D8%AC%D8%AF" class="nav-cta">واتساب <span class="ic"><svg viewBox="0 0 24 24"><path d="M.06 24l1.7-6.1A11.8 11.8 0 1 1 12.07 24a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.65.98 3.2 1.56 5.4 1.56a9.9 9.9 0 1 0-9.9-9.9c0 2.3.7 4.05 1.84 5.9l-.99 3.6 3.65-1.16z"/></svg></span></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mob" id="mob">
+  <div class="ml lat">Menu</div>
+  <a href="#about">من نحن</a>
+  <a href="#services">خدماتنا</a>
+  <a href="#work">أعمالنا</a>
+  <a href="#order">اطلبي الآن</a>
+  <a href="https://wa.me/966551460339?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85" class="mcta">اطلبي عبر واتساب</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <span class="spr-top"><svg width="60" height="60"><use href="#sprig"/></svg></span>
+    <h1>توزيعاتٌ <em>تُروى</em><br>لها الحكايات</h1>
+    <p class="hero-sub">ورقة وجد · لكل مناسبة</p>
+    <p class="hero-lead">نُصمّم وننفّذ توزيعاتٍ راقية بلمسةٍ مميّزة تليق بمناسباتك — من الأعراس والتخرّج إلى المواليد والأعياد. تصميمٌ مخصّص، تنفيذٌ بإتقان، وشحنٌ لجميع مناطق المملكة.</p>
+    <div class="hero-act">
+      <a href="https://wa.me/966551460339?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA" class="btn btn-w">اطلبي عبر واتساب <span class="ic"><svg viewBox="0 0 24 24"><path d="M.06 24l1.7-6.1A11.8 11.8 0 1 1 12.07 24a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.65.98 3.2 1.56 5.4 1.56a9.9 9.9 0 1 0-9.9-9.9c0 2.3.7 4.05 1.84 5.9l-.99 3.6 3.65-1.16z"/></svg></span></a>
+      <a href="#work" class="btn btn-o">شاهدي أعمالنا <span class="ic">↓</span></a>
+    </div>
+    <div class="hero-trust">
+      <span><span class="spr"><svg width="15" height="15"><use href="#sprig"/></svg></span> موثّقون في العمل الحر</span>
+      <span><span class="spr"><svg width="15" height="15"><use href="#sprig"/></svg></span> شحن لجميع المناطق</span>
+      <span><span class="spr"><svg width="15" height="15"><use href="#sprig"/></svg></span> تصاميم مخصّصة</span>
+    </div>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true">
+  <div class="marq-t">
+    <span>توزيعات أعراس<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>تخرّج<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>مواليد<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>أعياد ومناسبات<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>تصاميم مخصّصة<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span>
+    <span>توزيعات أعراس<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>تخرّج<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>مواليد<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>أعياد ومناسبات<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span><span>تصاميم مخصّصة<span class="spr"><svg width="13" height="13"><use href="#sprig"/></svg></span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow rv">من نحن</span>
+      <h2 class="rv d1">تفاصيلُ صغيرة<br><em>تترك أثرًا كبيرًا</em></h2>
+      <p class="rv d2">ورقة وجد مشروعٌ سعودي متخصّص في تصميم وتنفيذ التوزيعات والهدايا الورقية الراقية. نؤمن أن أجمل اللحظات تستحقّ تفصيلةً تُخلّدها، فنصنع لكل مناسبة لمسةً مميّزة تحمل اسمك وذوقك.</p>
+      <p class="rv d3">من قلوة إلى جميع مناطق المملكة، نصمّم بحبّ ونشحن لأي مكان — لتصلك توزيعاتك جاهزةً كما تمنّيتِها تمامًا.</p>
+    </div>
+    <div class="about-card rv d2">
+      <span class="spr"><svg width="44" height="44"><use href="#sprig"/></svg></span>
+      <h3>صُنعت <em>بحبّ</em>،<br>وأُتقنت بالتفاصيل</h3>
+      <p>كل توزيعة تمرّ بعنايةٍ من التصميم حتى التغليف، لتخرج بصورةٍ تليق بمناسبتك وضيوفك.</p>
+      <div class="about-stats">
+        <div class="st"><div class="n">100%</div><small>تصاميم مخصّصة</small></div>
+        <div class="st"><div class="n">★</div><small>موثّقون في العمل الحر</small></div>
+        <div class="st"><div class="n">13</div><small>منطقة · شحن للكل</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="shead">
+      <span class="spr rv"><svg width="30" height="30"><use href="#sprig"/></svg></span>
+      <span class="eyebrow c rv">خدماتنا</span>
+      <h2 class="rv d1">توزيعاتٌ <em>لكل مناسبة</em></h2>
+      <p class="rv d2">مهما كانت مناسبتك، لدينا اللمسة التي تليق بها.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv d1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span><h3>توزيعات الأعراس</h3><p>لمساتٌ راقية تليق بليلة العمر — توزيعات وهدايا للضيوف بتصميمٍ يحمل أسماءكم.</p></div>
+      <div class="svc rv d2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></span><h3>توزيعات التخرّج</h3><p>احتفلي بالإنجاز بتوزيعاتٍ مميّزة تخلّد لحظة التخرّج وتُسعد المهنّئين.</p></div>
+      <div class="svc rv d3"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM5 21c0-4 3-7 7-7s7 3 7 7"/></svg></span><h3>استقبال المواليد</h3><p>توزيعات وحلى للترحيب بالمولود — بألوانٍ ناعمة وتفاصيل تُفرح القلب.</p></div>
+      <div class="svc rv d1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7S9 7 8 5.5 9.5 2 12 7zM12 7s3 0 4-1.5S14.5 2 12 7z"/></svg></span><h3>أعياد ومناسبات</h3><p>توزيعات العيد والمناسبات الخاصة بتصاميمٍ موسمية أنيقة تناسب كل احتفال.</p></div>
+      <div class="svc rv d2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h11l5 5v11H4zM15 4v5h5M8 13h8M8 17h6"/></svg></span><h3>تصميم وطباعة</h3><p>بطاقات، ملصقات، ولفّ هدايا بتصميمٍ مخصّص يحمل هويتك ولمستك الخاصة.</p></div>
+      <div class="svc rv d3"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5zM3.3 7.5L12 12l8.7-4.5M12 22V12"/></svg></span><h3>طلبات الكميات</h3><p>تنفيذ الطلبات الكبيرة بإتقانٍ وفي الوقت — مع شحنٍ لجميع مناطق المملكة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow c rv">لماذا ورقة وجد</span>
+      <h2 class="rv d1">لمساتٌ تصنع <em>الفرق</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="wc rv d1"><span class="spr"><svg width="38" height="38"><use href="#sprig"/></svg></span><h3>موثّقون رسميًا</h3><p>موثّقون في منصة العمل الحر — ثقةٌ ومصداقية في كل تعامل.</p></div>
+      <div class="wc rv d2"><span class="spr"><svg width="38" height="38"><use href="#sprig"/></svg></span><h3>تصاميم مخصّصة</h3><p>كل توزيعة تُصمّم خصيصًا لمناسبتك وذوقك، لا قوالب جاهزة.</p></div>
+      <div class="wc rv d3"><span class="spr"><svg width="38" height="38"><use href="#sprig"/></svg></span><h3>شحن لكل مكان</h3><p>نشحن لجميع مناطق المملكة لتصلك توزيعاتك أينما كنتِ.</p></div>
+      <div class="wc rv d4"><span class="spr"><svg width="38" height="38"><use href="#sprig"/></svg></span><h3>جودة وذوق</h3><p>عنايةٌ بالتفاصيل من التصميم حتى التغليف بأناقةٍ تُرضيك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / TIKTOK -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow c rv">نماذج أعمالنا</span>
+      <h2 class="rv d1">شاهدي أعمالنا على <em>تيك توك</em></h2>
+      <p class="rv d2">أحدث تصاميمنا وتنفيذنا للتوزيعات — مباشرةً من حسابنا.</p>
+    </div>
+    <div class="tk-show rv d1">
+      <span class="tk-glyph"><svg viewBox="0 0 24 24"><path d="M16.5 5.6a4.7 4.7 0 0 1-1-.1 4.8 4.8 0 0 1-3.1-2.9V14a3.1 3.1 0 1 1-3.1-3.1c.18 0 .35.02.52.05v-2.4a5.5 5.5 0 1 0 4.9 5.46V8.9a7 7 0 0 0 4 1.26V7.7a4.7 4.7 0 0 1-2.1-2.1z"/></svg></span>
+      <div class="han lat">@wajd.paper</div>
+      <p>فيديوهات حقيقية من تصاميمنا وتنفيذنا للتوزيعات — تتجدّد أولًا بأول على حسابنا.</p>
+      <div class="tk-stats">
+        <div class="s"><b>1.9K</b><small>متابع</small></div>
+        <div class="s"><b>+10K</b><small>إعجاب</small></div>
+        <div class="s"><b>★</b><small>موثّقون</small></div>
+      </div>
+      <a href="https://www.tiktok.com/@wajd.paper" target="_blank" rel="noopener" class="tk-cta">شاهدي جميع أعمالنا على تيك توك <span class="ic">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order" id="order">
+  <div class="wrap od-grid">
+    <div>
+      <span class="eyebrow rv">اطلبي الآن</span>
+      <h2 class="rv d1">جاهزة لـ <em>توزيعتك</em>؟</h2>
+      <p class="lead rv d2">عبّئي تفاصيل طلبك وسنكمل معك مباشرةً عبر واتساب لتجهيز توزيعتك بأجمل صورة.</p>
+      <div class="od-info rv d3">
+        <a href="https://wa.me/966551460339" target="_blank" rel="noopener" class="odi">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.7-6.1A11.8 11.8 0 1 1 12.07 24a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.65.98 3.2 1.56 5.4 1.56a9.9 9.9 0 1 0-9.9-9.9c0 2.3.7 4.05 1.84 5.9l-.99 3.6 3.65-1.16z"/></svg></span>
+          <span><small>واتساب · للطلب والاستفسار</small><b class="num">055 146 0339</b></span>
+        </a>
+        <div class="odi">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><small>الموقع</small><b>قلوة · شحن لجميع المناطق</b></span>
+        </div>
+      </div>
+    </div>
+    <div class="ocard rv d2">
+      <h3>اطلبي توزيعتك</h3>
+      <p class="osub">نكمل معك عبر واتساب مباشرة.</p>
+      <form onsubmit="return sendOrder(event)">
+        <div class="frow">
+          <div class="fld"><label>الاسم</label><input id="o-name" type="text" placeholder="اسمك الكريم" required></div>
+          <div class="fld"><label>المناسبة</label>
+            <select id="o-occ">
+              <option>عرس</option><option>تخرّج</option><option>استقبال مولود</option><option>عيد</option><option>مناسبة خاصة</option><option>أخرى</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fld"><label>الكمية التقريبية</label><input id="o-qty" type="text" placeholder="مثال: 50 توزيعة"></div>
+          <div class="fld"><label>المنطقة / المدينة</label><input id="o-city" type="text" placeholder="مدينتك"></div>
+        </div>
+        <div class="fld"><label>تفاصيل التصميم</label><textarea id="o-msg" placeholder="اكتبي فكرتك، الألوان، الأسماء أو أي تفاصيل تحبينها..."></textarea></div>
+        <button type="submit" class="obtn">
+          <svg viewBox="0 0 24 24"><path d="M.06 24l1.7-6.1A11.8 11.8 0 1 1 12.07 24a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.65.98 3.2 1.56 5.4 1.56a9.9 9.9 0 1 0-9.9-9.9c0 2.3.7 4.05 1.84 5.9l-.99 3.6 3.65-1.16z"/></svg>
+          إرسال الطلب عبر واتساب
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <span class="spr"><svg width="40" height="40"><use href="#sprig"/></svg></span>
+    <h3>ورقة <em>وجد</em></h3>
+    <p>توزيعاتٌ وتصاميم راقية لكل مناسبة — صُنعت بحبّ، وتصلك أينما كنتِ.</p>
+    <div class="foot-soc">
+      <a href="https://wa.me/966551460339" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M.06 24l1.68-6.13A11.8 11.8 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.8 11.8 0 0 1 8.4 3.48 11.8 11.8 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.65.98 3.23 1.56 5.45 1.56 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.89 4.44-9.89 9.9 0 2.33.68 4.07 1.83 5.9l-.99 3.62 3.6-.95zM17.9 14.6c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.42z"/></svg></a>
+      <a href="https://www.tiktok.com/@wajd.paper" target="_blank" rel="noopener" aria-label="تيك توك"><svg viewBox="0 0 24 24"><path d="M16.5 5.6a4.7 4.7 0 0 1-1-.1 4.8 4.8 0 0 1-3.1-2.9V14a3.1 3.1 0 1 1-3.1-3.1c.18 0 .35.02.52.05v-2.4a5.5 5.5 0 1 0 4.9 5.46V8.9a7 7 0 0 0 4 1.26V7.7a4.7 4.7 0 0 1-2.1-2.1z"/></svg></a>
+    </div>
+    <div class="foot-bot">
+      <small>© 2026 ورقة وجد · توزيعات</small>
+      <small class="lat">Wajd Paper · Made with love</small>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/966551460339?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg viewBox="0 0 24 24"><path d="M.06 24l1.68-6.13A11.8 11.8 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.8 11.8 0 0 1 8.4 3.48 11.8 11.8 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.65.98 3.23 1.56 5.45 1.56 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.89 4.44-9.89 9.9 0 2.33.68 4.07 1.83 5.9l-.99 3.62 3.6-.95zM17.9 14.6c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.42z"/></svg>
+</a>
+
+<script>
+function sendOrder(ev){
+  ev.preventDefault();
+  var g=function(id){var e=document.getElementById(id);return e?e.value.trim():'';};
+  var msg='السلام عليكم، أرغب بطلب توزيعات من ورقة وجد ✨\n——————\n';
+  msg+='الاسم: '+g('o-name')+'\n';
+  msg+='المناسبة: '+g('o-occ')+'\n';
+  if(g('o-qty')) msg+='الكمية: '+g('o-qty')+'\n';
+  if(g('o-city')) msg+='المنطقة: '+g('o-city')+'\n';
+  if(g('o-msg')) msg+='التفاصيل: '+g('o-msg');
+  window.open('https://wa.me/966551460339?text='+encodeURIComponent(msg),'_blank');
+  return false;
+}
+(function(){
+  var pre=document.getElementById('pre');
+  function hide(){pre.classList.add('done')}
+  window.addEventListener('load',function(){setTimeout(hide,500)});setTimeout(hide,2600);
+
+  var prog=document.querySelector('#prog i'),nav=document.getElementById('nav');
+  function onScroll(){
+    var h=document.documentElement,sc=h.scrollTop,mx=h.scrollHeight-h.clientHeight;
+    prog.style.width=(mx>0?(sc/mx*100):0)+'%';
+    nav.classList.toggle('shrink',sc>40);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var burger=document.getElementById('burger'),mob=document.getElementById('mob');
+  function toggle(){burger.classList.toggle('x');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':''}
+  burger.addEventListener('click',toggle);
+  mob.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){if(mob.classList.contains('open'))toggle()})});
+
+  var rvs=document.querySelectorAll('.rv');
+  function safety(){var vh=window.innerHeight;rvs.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<vh*0.94){el.classList.add('in')}})}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:'0px 0px -7% 0px'});
+    rvs.forEach(function(el){io.observe(el)});
+  }
+  window.addEventListener('load',safety);window.addEventListener('scroll',safety,{passive:true});
+  setTimeout(safety,400);setTimeout(safety,1400);
+})();
+</script>
+</body>
+</html>
